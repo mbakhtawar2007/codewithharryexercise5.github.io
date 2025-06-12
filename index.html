@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code with Harry - Exercise 5</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .main-header {
+      width: 100%;
+      height: 10vh;
+      background-color: aquamarine;
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .container span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-list a {
+      text-decoration: none;
+      color: brown;
+      font-size: 16px;
+    }
+
+    .main-container {
+      background-color: lightcoral;
+      width: 90%;
+      height: 550px;
+      margin: 40px auto;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+    .box {
+      width: 250px;
+      height: 250px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    .box1 {
+      background-color: lightblue;
+    }
+
+    .box2 {
+      background-color: lightgreen;
+    }
+
+    .course-name {
+      width: 90%;
+      height: 100px;
+      margin: 20px auto;
+      background-color: grey;
+      color: darkblue;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: darkblue;
+      color: white;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .sticky {
+      position: fixed;
+      right: 2px;
+      bottom: 20px;
+      background-color: lightgrey;
+      text-align: center;
+      z-index: 1000;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .sticky img {
+      width: 100px;
+      height: auto;
+      border-radius: 5px;
+    }
+  </style>
 </head>
+
 <body>
-    
+  <header class="main-header">
+    <nav class="container">
+      <span>Code with Harry</span>
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+  </main>
+
+  <div class="sticky">
+    <img src="./download.jpeg" alt="Sticky Image" />
+  </div>
+
+  <div class="course-name">
+    Sigma Web Development Course
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2023 Code with Harry. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
